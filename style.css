@@ -347,6 +347,9 @@ form input, form textarea{
     #none{
         display: none;
     }
+    #home-img{
+        display: none;
+    }
     nav{
         justify-content:space-between;
     }
