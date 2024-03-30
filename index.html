@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d3acebc09b.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div id="none"></div>
+            </nav>
+            <div class="row">
+                <div class="header-text">
+                    <h1>Hi, I am <br><span>Bristi Maity</span></h1>
+                    <p>CSE 3rd Year Undergrad</p>
+                    <p>I am a <span class="auto-type"></span></p>
+                    <a href="https://drive.google.com/file/d/181A7jUBegjXDi2D76MTVxUQHMd20i1K_/view?usp=drive_link" class="btn btn2">Download CV</a>
+                </div>
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="user">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/formal-photo.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Currently in my 3rd year of pursuing a BTech degree in Computer Science and Engineering. I possess a profound interest in Machine Learning accompanied by a passion for coding. Eager to explore new challenges and apply my skills to real- world problems. Committed to continuous learning and collaborative teamwork.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('achievements')">ACHIEVEMENTS</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Machine Learning</b></span><br>
+                            ML Expertise: <b>Computer Vision, Natural Language Processing(NLP), Regression, Classification, Deep Learning, Unsupervised Learning </b><br>
+                            </li>
+                            <li><span><b>Technical Skills</b></span><br>Programming Languages: <b>Java, Python, C, HTML/CSS, JavaScript </b><br>
+                            Web Framework: <b>Flask</b> <br>Integrated Development Environments (IDEs): <b>IntelliJ IDEA, Visual Studio Code</b></li>
+                            <li><span><b>Tools</b></span><br>
+                            <b>Jupyter, Colab, Pandas, Scikit-Learn, Matplotlib, OpenCV</b></li>
+                            <li><span><b>Spoken Languages</b></span><br>
+                            <b>Bengali (Native), English (Proficient), Hindi (Proficient)</b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Techno Main Salt Lake (2021-2025)</span><br>B.Tech in <b>Computer Science and Engineering</b><br>Related Coursework: Data Structures & Algorithms, Computer Organization & Architecture, Operating Systems, Artificial Intelligence, Object-Oriented Programming, DBMS, Computer Networks <br><b>GPA: 9.07/10</b> </li>
+                            <li><span>Labanhrad Vidyapith (2019-2021)</span><br>Higher Secondary<br>Coursework: Physics, Chemistry, Mathematics, Statistics, Languages <br><b>Grade: 94.2%</b></li>
+                            <li><span>Begum Rokeya Smriti Balika Vidyalaya(2019)</span><br>Secondary <br><b>Grade: 93.7% </b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>WBJEE GMR : 4056</span><br>Secured General Merit Rank 4056 in WBJEE 2021 </li>
+                            <li><span>Team member in EDGE-22</span><br>Was part of the management team in organising EDGE- the largest tech-fest in Kolkata</li>
+                            <li><span>Participated in SIH-23</span><br>Participated in Smart India Hackathon 2023 and got selected in the intra-college hackathon</li>
+                            <li><span>Amazon ML Summer School</span><br>Participated in Amazon ML Summer School 2023</li>
+                            <li><span>Certified in Machine Learning Specialization</span> <br>Certified by Stanford University in Machine Learning Specialization by Andrew NG : <a href="https://www.coursera.org/account/accomplishments/specialization/Q8WR2ZHB7Q7Q"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------projects--------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="work-list">
+                <div class="active-work">
+                    <h2>Sportsperson Face Recognition System</h2>
+                    <p>This face recognition system is trained with images of some famous players. User can choose file or drop picture and the system will display the player with highest probability score as an result along with the table of probability scores.</p>
+                    
+                    <a href="https://github.com/bristi03/Players_face_recognition_system"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    <a href="https://sporteperson-face-recognizer.onrender.com"><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+                <div class="active-work">
+                    <h2>Green-IQ:Rural Educational Website </h2>
+                    <p>The GreenIQ Web Application is the ultimate solution to all rural education problems.This team project incorporates solutions like a Virtual Navigation Assistant, Live 1:1 Booked Sessions with assigned mentors, a Chatbot for enhancing communication skills, a Content Gallery.</p>
+                    
+                    <a href="https://github.com/bristi03/GreenIQ-ORIGIN_SIH-2023"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    
+                    <a href="https://green-iq-deployed.vercel.app/"><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+                <div class="active-work">
+                    <h2>Text and PDF Summarizer </h2>
+                    <p>The text and pdf summarizer provides summary for large text inputs or pdf containing text inputs. The BART LLM model used in this is fine tuned for providing abstractive summary of the given text.</p>
+                    
+                    <a href="https://github.com/bristi03/Text-PDF-Summarizer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+                <div class="work">
+                    <h2>AudioWaves: An Online Music Store</h2>
+                    <p>AudioWaves is an online music store devoloped with Python Flask and HTML, CSS and JavaScript. Users can stream music with general functionalities like play, pause, forward, backward, seek through music, control volume, choose playback mode, add song to favorites. They can also search music by song/artist name.</p>
+                    
+                    <a href="https://github.com/bristi03/Online-Music-Store-Prototype"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                    
+                    <a href="https://audiowaves.onrender.com"><i class="fa-solid fa-globe icon"></i> View Live Demo</a>
+                </div>
+                <div class="work">
+                    <h2>Car Price Prediction System</h2>
+                    <p>The Car Price Prediction System provides estimated price of a car based on some historical data (Company, Model, Year of purchase, Fuel type, Kms driven). This is a Machine Learning (Linear regression) project made using Flask, HTML, CSS, JavaScript</p>
+                    
+                    <a href="https://github.com/bristi03/Car_Price_Prediction_System"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+                <div class="work">
+                    <h2>T20 Score Prediction System</h2>
+                    <p>The T20 Score Predictor gives an estimated run/score based on match data.The Machine Learning model used for prediction here is XGBRegressor. </p>
+                    
+                    <a href="https://github.com/bristi03/T20_Score_predictor"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Project</a>
+                </div>
+            </div>
+            <button class="btn" id="project-btn" onclick="opendiv()">See more</button>
+            <button class="btn hide-btn" id="project-btn-less" onclick="closediv()">See less</button>
+        </div>
+    </div>
+
+    <!-- ----contact--- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    
+                    <p><i class="fa-solid fa-envelope"></i> bristimaity01@gmail.com</p>
+                    
+                    <p><i class="fa-solid fa-phone"></i>+91 8697176997</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bristi-maity-6260a5244/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/bristi03"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_mistletoee._?igsh=YmRyeHduNzdnaHQ="><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-copyright"></i> Made with <i class="fa-solid fa-heart"></i> by Bristi Maity</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed= new Typed(".auto-type",{
+            strings:["Machine Learning Enthusiast","Problem Solver","Consistent Learner","Passionate coder"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        })
+    </script>
+</body>
+</html>
